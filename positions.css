@@ -1,0 +1,11 @@
+.container{
+    width: 30vw;
+    height: 80vh;
+    border: 1px solid red;
+}
+
+h1{
+    background-color: yellow;
+    font-weight: 700;
+    color: red;
+}
