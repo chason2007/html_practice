@@ -9,7 +9,7 @@ h1{
 }
 
 /* id selector */
-#features, #home{
+#a, #home{
     color: red;
     background-color: yellow;
 }
