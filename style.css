@@ -42,11 +42,29 @@ button[type="button"]{
     font-size: 32px;
 }
 
+/* pseudo classes */
 li:nth-child(2):hover{
     color: cyan;
     background-color: black;
 }
-
 li::marker{
     color: darkgoldenrod;
+}
+
+/*pseudo elements*/
+#r::before{
+    content: "Written by css: ";
+}
+
+.b::first-letter{
+    font-size: 48px;
+    color: red;
+}
+
+#q{
+    display: block;
+}
+
+#q::first-letter{
+    font-size: 40px;
 }
