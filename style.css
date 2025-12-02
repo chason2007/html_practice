@@ -16,5 +16,28 @@ h1{
 
 /* class selector */
 .b{
-    border: 5px solid;;
+    border: 5px solid;
+}
+
+/* Group selector */
+h1,h2{
+    color: blueviolet;
+}
+
+/* descendant selector */
+div p{
+    color: red;
+    background-color: yellow;
+}
+
+/*child selector*/
+div > p{
+    color: green;
+    background-color: blue;
+}
+
+/* attribute selector */
+button[type="button"]{
+    color: red;
+    font-size: 32px;
 }
