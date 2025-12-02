@@ -41,3 +41,12 @@ button[type="button"]{
     color: red;
     font-size: 32px;
 }
+
+li:nth-child(2){
+    color: cyan;
+    background-color: black;
+}
+
+li::marker{
+    color: darkgoldenrod;
+}
