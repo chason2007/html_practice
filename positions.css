@@ -9,3 +9,24 @@ h1{
     font-weight: 700;
     color: red;
 }
+
+.sticky{
+    position: sticky;
+    top: 20px;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+}
