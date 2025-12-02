@@ -42,7 +42,7 @@ button[type="button"]{
     font-size: 32px;
 }
 
-li:nth-child(2){
+li:nth-child(2):hover{
     color: cyan;
     background-color: black;
 }
