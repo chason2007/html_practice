@@ -1,0 +1,20 @@
+/* Universal selector */
+*{
+    border: 1px solid red;
+}
+
+/* tag selector */
+h1{
+    background-color: green;
+}
+
+/* id selector */
+#features, #home{
+    color: red;
+    background-color: yellow;
+}
+
+/* class selector */
+.b{
+    border: 5px solid;;
+}
