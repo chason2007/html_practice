@@ -4,7 +4,7 @@
     height: 90vh;
     /* gap: 10px; */
     flex-direction: row;
-    justify-content: center;
+    justify-content:;
     align-items: flex-start;
     flex-wrap: wrap;
 }
