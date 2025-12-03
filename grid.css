@@ -2,8 +2,11 @@
     border: 1px solid red;
     height: 90vh;
     display: grid;
+    gap: 20px;
     grid-template-columns: 100px repeat(4, 200px);
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px;
+    padding: auto;
 }
 
 .item{
