@@ -20,8 +20,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg,#243bdb,#2f49d9);
-  color: #fff;
+  background: linear-gradient(180deg,#2c40c6,#2f49d9);
+  color: #ffffff;
   padding: 0 24px;
   box-sizing: border-box;
   z-index: 1000;
@@ -34,7 +34,7 @@ nav {
   width: var(--sidebar-w);
   height: calc(100vh - var(--header-h));
   background: #2f3136;
-  color: #fff;
+  color: #ffffff;
   padding: 16px 12px;
   box-sizing: border-box;
   z-index: 900;                              
@@ -84,6 +84,7 @@ main {
   flex-direction:column;
   justify-content:center;
   color: #222;
+  margin-top: auto;
 }
 
 .gridContainer.cards {

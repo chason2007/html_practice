@@ -1,6 +1,7 @@
 /* Universal selector */
 *{
     border: 1px solid red;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* tag selector */
@@ -43,12 +44,12 @@ button[type="button"]{
 }
 
 /* pseudo classes */
-li:nth-child(2):hover{
+li:nth-child(2){
     color: cyan;
     background-color: black;
 }
 li::marker{
-    color: darkgoldenrod;
+    color: red;
 }
 
 /*pseudo elements*/
