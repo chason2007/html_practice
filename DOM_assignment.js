@@ -1,5 +1,5 @@
 function changeText(){
-    document.getElementById("text").innerHTML = "The text has changed!";
+    document.getElementById("text").innerHTML = "Text changed";
 }
 
 function changeColor(){
@@ -13,6 +13,9 @@ function hideBox(){
 
 function showBox(){
     document.getElementById("box").style.display = "block";
+    document.getElementById("box").style.display = "flex";
+    document.getElementById("box").style.justifyContent = "center";
+    document.getElementById("box").style.alignItems = "center";
 }
 
 function addItem(){
