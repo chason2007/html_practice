@@ -18,3 +18,16 @@ console.log(query) //returns first instance of given query
 let allquery = document.querySelectorAll(".b")
 console.log(allquery) //returns nodeList array
 
+
+//read and write operation
+let head = document.querySelector("p")
+console.log(head.textContent);
+
+//Write operation
+head.textContent = "New para content"
+
+let div = document.querySelector("div")
+div.innerHTML = "<p>Hello from para</p>"
+//div.textContent = "<p>Hello from para</p>"
+console.log(div.textContent)
+console.log(div.innerHTML);
