@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>DOM</title>
+    <style>
+        body{
+            height: 100px;
+            display: flex;
+            padding-top: 20px;
+            background-color: lightcyan;
+            align-items: center;
+            flex-direction: column;
+        }
+        form{
+            width: 300px;
+            height: 100px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-direction: column;
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+    </style>
+    <script src="newDom.js" defer></script>
+</head>
+<body>
+    <form>
+        <input type="text" class="a" placeholder="name"/><br>
+        <input type="text" class="a" placeholder="feedback"/>
+        <input type="submit" value="Submit"/>
+    </form>
+</body>
+</html>
