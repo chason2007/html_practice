@@ -25,7 +25,7 @@ checkBtn.addEventListener("click", () => {
   else if(inputVal === randomNumber){
     document.body.style.backgroundColor = "green";
     number.textContent = randomNumber;
-    if(highScore.textContent<s) highScore.textContent = s;
+    if (Number(highScore.textContent) < s) highScore.textContent = s;
     msg.textContent = "Value correct!";
   }
   else if(inputVal > randomNumber){

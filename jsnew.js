@@ -1,24 +1,18 @@
-console.log(a);
-//hoisting
-var a= 10;
-//global scope / function scope
-console.log(a);
+// Demonstrate hoisting for `var`
+var a = 10;
+console.log(a); // 10
 
-//es6
-//let and const
-console.log(b);
-//reference error
-//temporal dead zone
+// ES6: let and const have temporal dead zone — declare before use
 let b = 20;
-b=130;
+console.log(b);
+b = 130;
 console.log(b);
 
 {
-    let b=30;
+    let b = 30;
     console.log(b);
 }
 
-console.log(c);
 const c = 40;
 console.log(c);
 
@@ -46,7 +40,7 @@ let arrow = () =>{
 
 arrow();
 
-//4. Callback function and 5. IIFE (immediately invoked function expression)
-{()=>{
+// 4. Callback function and 5. IIFE (immediately invoked function expression)
+(() => {
     console.log("Callback and iife f called");
-}}();
+})();

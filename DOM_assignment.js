@@ -1,5 +1,5 @@
 function changeText(){
-    document.getElementById("text").innerHTML = "Text changed";
+    document.getElementById("text").textContent = "Text changed";
 }
 
 function changeColor(){
@@ -12,7 +12,7 @@ function hideBox(){
 }
 
 function showBox(){
-    document.getElementById("box").style.display = "block";
+    // make the box a flex container and center its contents
     document.getElementById("box").style.display = "flex";
     document.getElementById("box").style.justifyContent = "center";
     document.getElementById("box").style.alignItems = "center";
