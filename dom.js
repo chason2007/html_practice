@@ -31,3 +31,14 @@ div.innerHTML = "<p>Hello from para</p>"
 //div.textContent = "<p>Hello from para</p>"
 console.log(div.textContent)
 console.log(div.innerHTML);
+
+//add/remove/toggle class
+let headclass = document.querySelector("h1")
+headclass.classList.add("color")
+headclass.classList.remove("border")
+head.classList.toggle("background")
+
+//styling
+let p = document.querySelector("p")
+p.style.color = "red"
+p.style.backgroundColor = "green"
