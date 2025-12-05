@@ -20,7 +20,7 @@ console.log(allquery) //returns nodeList array
 
 
 //read and write operation
-let head = document.querySelector("p")
+let head = document.querySelector("h1")
 console.log(head.textContent);
 
 //Write operation
