@@ -18,7 +18,11 @@ let inputVal
 checkBtn.addEventListener("click", () => {
   inputVal = Number(guess.value);
   console.log(randomNumber);
-  if(inputVal === randomNumber){
+  if(!inputVal){
+    document.body.style.backgroundColor = "black";
+    msg.textContent = "No value!";
+  }
+  else if(inputVal === randomNumber){
     document.body.style.backgroundColor = "green";
     number.textContent = randomNumber;
     highScore.textContent = s;
@@ -35,9 +39,17 @@ checkBtn.addEventListener("click", () => {
     s-=1;
     score.textContent = s;
     msg.textContent = "Too low!";
-  }
-  else{
-    document.body.style.backgroundColor = "black";
-    msg.textContent = "No value!";
-  }
+  }  
 })  //parameters: event, callback fn.
+
+let init=()=>{
+  s = 20
+  score.textContent = s;
+  number.textContent = "?";
+  msg.textContent = "Start guessing...";
+  randomNumber = Math.trunc(Math.random()*20)+1;
+  document.body.style.backgroundColor = "black";
+  guess.value = "";
+}
+
+againBtn.addEventListener("click", init);
