@@ -42,3 +42,20 @@ head.classList.toggle("background")
 let p = document.querySelector("p")
 p.style.color = "red"
 p.style.backgroundColor = "green"
+
+//creating element
+let ul = document.createElement("ul")
+let lii = document.createElement("li")
+lii.textContent = "Item 1"
+let li1 = document.createElement("li")
+li1.textContent = "Item 2"
+ul.appendChild(lii);
+ul.appendChild(li1);
+
+document.body.appendChild(ul);
+let arr = ["apple", "banana", "mango"]
+arr.forEach((element)=>{
+    let lo = document.createElement("li");
+    lo.textContent = element
+    ul.appendChild(lo);
+});
