@@ -70,5 +70,10 @@ let fetchData = async () => {
 let localDat = JSON.parse(localStorage.getItem("responseData")) || [];
 
 if(localDat.length <= 0){
-    fetchData();
+    fetchData().then(() => {
+        localDat = JSON.parse(localStorage.getItem("responseData")) || [];
+        console.log(JSON.stringify(localDat));
+    });
+} else {
+    console.log(JSON.stringify(localDat));
 }
