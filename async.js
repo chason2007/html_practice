@@ -18,3 +18,24 @@ setTimeout(() => {
     }, 1000);
   }, 1000);
 }, 1000);
+
+//Promise states: pending, fulfilled, rejected
+
+let myPromise = new Promise((res, rej) => {
+    let marks = 70;
+    if (marks >= 60) {
+        res("Student passed the exam.");
+    } else {
+        rej("Student failed the exam.");
+    }
+});
+
+//calling a promise
+//1. .then() and .catch()
+myPromise
+    .then((a) => {
+        console.log(a);
+    })
+    .catch((err) => {
+        console.log(err);
+    });
