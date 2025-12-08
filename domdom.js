@@ -11,12 +11,11 @@ var funf = function(aa,jk){
 
 //call apply bind
 //bind
-let boundedfn = funf.bind(Obj, 500, "kl");
+let boundedfn = funf.bind(obj, 500, "kl");
 boundedfn();
 //return a new function
+
 //call
 funf.call(obj, 400, 900);
-//it will immediately and the arguments we want to pass
-
 //apply
 funf.apply(obj, [600, 900]);
