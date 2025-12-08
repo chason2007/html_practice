@@ -49,6 +49,21 @@ let handlePromise = async () => {
         console.log("anything");
     } catch(err){
         console.log(err);
+    } finally{
+        
     }
 }
 handlePromise();
+
+//api
+let fetchData = async () => {
+    try {
+        let response = await fetch("https://jsonplaceholder.typicode.com/posts");
+        console.log(response)
+        const data = await response.json();
+        console.log(data);
+    } catch (err) {
+        console.log(err);
+    }
+}
+fetchData();
