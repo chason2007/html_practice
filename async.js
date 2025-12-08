@@ -61,9 +61,14 @@ let fetchData = async () => {
         let response = await fetch("https://jsonplaceholder.typicode.com/posts");
         console.log(response)
         const data = await response.json();
+        localStorage.setItem("responseData", JSON.stringify(data));
         console.log(data);
     } catch (err) {
         console.log(err);
     }
 }
-fetchData();
+let localDat = JSON.parse(localStorage.getItem("responseData")) || [];
+
+if(localDat.length <= 0){
+    fetchData();
+}
