@@ -22,7 +22,7 @@ setTimeout(() => {
 //Promise states: pending, fulfilled, rejected
 
 let myPromise = new Promise((res, rej) => {
-    let marks = 70;
+    let marks = 80;
     if (marks >= 60) {
         res("Student passed the exam.");
     } else {
@@ -39,3 +39,16 @@ myPromise
     .catch((err) => {
         console.log(err);
     });
+
+//2. async/await
+//no error handling
+let handlePromise = async () => {
+    try{
+        let response = await myPromise;
+        console.log(response);
+        console.log("anything");
+    } catch(err){
+        console.log(err);
+    }
+}
+handlePromise();
