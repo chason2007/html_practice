@@ -11,19 +11,12 @@ const msg = "Hello world!!!!";
 function App() {
   return (
     <div className="App">
-      {/* <h1>Learning React</h1>
-      <Comp1 age={21} myMsg={msg}></Comp1>
-      <Comp2></Comp2>
-      <Comp3></Comp3>
-      <Comp4></Comp4>
-      <Comp5></Comp5>
-      <NamedComp1></NamedComp1>
-      <NamedComp2></NamedComp2>
-      <NamedComp3></NamedComp3>
-      <NamedComp4></NamedComp4>
-      <NamedComp5></NamedComp5> */}
-      <GrandFather></GrandFather>
-      
+      <h1>Learning React</h1>
+      <h1>0</h1>
+      <div className="buttons">
+        <button className = "inc">Increment</button>
+        <button className = "dec">Decrement</button>
+      </div>
     </div>
 
   );

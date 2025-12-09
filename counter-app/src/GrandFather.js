@@ -1,6 +1,6 @@
 import Father from "./Father";
 
-const GrandFather = () => {
+const GrandFather = ({myWill}) => {
     return (
         <div className="gf">
             <h2>This is GrandFather Component</h2>
