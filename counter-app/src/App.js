@@ -1,24 +1,32 @@
-import "./App.css"
-import Comp1 from "./Comp1";
-import Comp2 from "./Comp2";
-import Comp3 from "./Comp3";
-import Comp4 from "./Comp4";
-import Comp5 from "./Comp5";
-import GrandFather from "./GrandFather";
-import { NamedComp1, NamedComp2, NamedComp3, NamedComp4, NamedComp5 } from "./NamedComps";
+import "./App.css";
+import React, { useState } from "react";
 
-const msg = "Hello world!!!!";
 function App() {
+  //1. Variable 2. Function
+  const [val, setVal] = useState(0);
+
+  const handleIncrement = () => {
+    setVal(val+1);
+  };
+
+  const handleDecrement = () => {
+    setVal(val-1);
+  };
+
   return (
     <div className="App">
-      <h1>Learning React</h1>
-      <h1>0</h1>
-      <div className="buttons">
-        <button className = "inc">Increment</button>
-        <button className = "dec">Decrement</button>
+      <div className="counter">
+        <h1>{val}</h1>
+        <div className="buttons">
+          <button className="inc" onClick={handleIncrement}>
+            Increment
+          </button>
+          <button className="dec" onClick={handleDecrement}>
+            Decrement
+          </button>
+        </div>
       </div>
     </div>
-
   );
 }
 
