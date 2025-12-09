@@ -1,25 +1,24 @@
-export const Component2 = () => {
+const Comp2 = () => {
   return (
     <div>
-        <h2>This is Component 2</h2>
+        <h2>Component 2</h2>
+    </div>
+  );
+}
+export default Comp2;
+
+export const Comp3 = () => {
+  return (
+    <div>
+        <h2>Component 3</h2>
     </div>
   );
 }
 
-export const Component3 = () => {
-    return (
-        <div>
-          <h2>This is Component 3</h2>
-        </div>
-    );
+export const Comp4 = () => {
+  return (
+    <div>
+        <h2>Component 4</h2>
+    </div>
+  );
 }
-
-const Component = () => {
-    return (
-        <div>
-            <h2>This is Component 2</h2>
-        </div>
-    );
-}
-
-export default Component;

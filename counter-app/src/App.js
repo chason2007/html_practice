@@ -1,15 +1,15 @@
 import "./App.css"
-import Component1 from "./Component1";
-import Component, {Component2, Component3} from "./Component2"
+import Comp1 from "./Comp1";
+import Comp2, { Comp3, Comp4 } from "./Component2";
 
 function App() {
   return (
     <div className="App">
       <h1>Learning React</h1>
-      <Component1></Component1>
-      <Component2></Component2>
-      <Component></Component>
-      <Component3></Component3>
+      <Comp1></Comp1>
+      <Comp2></Comp2>
+      <Comp3></Comp3>
+      <Comp4></Comp4>
     </div>
 
   );
