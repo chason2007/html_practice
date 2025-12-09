@@ -10,7 +10,7 @@ function App() {
   };
 
   const handleDecrement = () => {
-    setVal(val-1);
+    setVal((val) => Math.max(val - 1, 0));
   };
 
   return (
