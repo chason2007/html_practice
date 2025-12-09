@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.gf {
+  border: 2px solid red;
+  margin: 10px;
+  padding: 10px;
+}
+
+.f {
+  border: 2px solid green;
+  margin: 10px;
+  padding: 10px;
+}
+
+.s {
+  border: 2px solid blue;
+  margin: 10px;
+  padding: 10px;
+}
+
+.gs {
+  border: 2px solid orange;
+  margin: 10px;
+  padding: 10px;
+}
