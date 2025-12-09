@@ -93,10 +93,12 @@ button{
   font-size: 36px;
   background-color: lime;
   cursor: pointer;
+  border: 5px solid black;
 }
 
 .dec:hover{
   font-size: 36px;
   background-color: darkred;
   cursor: pointer;
+  border: 5px solid black;
 }
