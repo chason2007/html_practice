@@ -1,7 +1,7 @@
 const Comp5 = () => {
   return (
     <div>
-        <h2>Component V</h2>
+        <h2 style={{backgroundColor: "red"}}>Component V</h2>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 const Comp2 = () => {
   return (
     <div>
-        <h2>Component TTWWOO</h2>
+      <h2 style={{ backgroundColor: 'black', color: 'white' }}>Component TTWWOO</h2>
     </div>
   );
 }

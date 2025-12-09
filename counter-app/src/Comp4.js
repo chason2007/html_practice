@@ -1,7 +1,7 @@
 export const Comp4 = () => {
   return (
     <div>
-        <h2>Component 4</h2>
+        <h2><i>Component 4</i></h2>
     </div>
   );
 }
