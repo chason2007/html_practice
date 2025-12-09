@@ -1,8 +1,10 @@
 import "./App.css";
 import React, { useState } from "react";
 import Counter from "./Counter";
+import ButtonContainer from "./ButtonContainer";
 
 function App() {
+  //1. Variable 2. Function
   const [val, setVal] = useState(0);
 
   const handleIncrement = () => {
@@ -10,16 +12,15 @@ function App() {
   };
 
   const handleDecrement = () => {
-    setVal(val-1);
+    setVal((val) => Math.max(val - 1, 0));
   };
 
   return (
     <div className="App">
-      <Counter 
-        val={val} 
-        handleIncrement={handleIncrement} 
-        handleDecrement={handleDecrement} 
-      />
+      <div className="counter">
+        <Counter val={val} />
+        <ButtonContainer onIncrement={handleIncrement} onDecrement={handleDecrement} />
+      </div>
     </div>
   );
 }
