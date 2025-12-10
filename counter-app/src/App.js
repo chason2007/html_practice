@@ -1,10 +1,13 @@
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import Counter from "./Counter";
+import TableRow from "./TableRow";
+import TableRow2 from "./TableRow2";
 
 function App() {
   const [val, setVal] = useState(0);
-  let [data, setData] = useState(null);
+  let [data, setData] = useState([]);
+  let [posts, setPosts] = useState([]);
   const handleIncrement = () => {
     setVal(val + 1);
   };
@@ -38,9 +41,22 @@ function App() {
         console.log("Error fetching data:", err);
       }
     };
+    const fetchApi2 = async () => {
+      try {
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/posts"
+        );
+        const fetchData = await response.json();
+        setPosts(fetchData);
+      } catch (err) {
+        console.log("Error fetching data:", err);
+      }
+    };
     fetchApi();
+    fetchApi2();
   }, []);
   console.log(data);
+  console.log(posts);
 
   // // side effects
   // //Args: 1. Callback fn 2. Dependency array(props or state)
@@ -72,16 +88,21 @@ function App() {
           <th>Contact</th>
         </thead>
         <tbody>
-          {data &&
-            data.map((item) => {
-              return (
-                <tr key={item.id}>
-                  <td>{item.name}</td>
-                  <td>{item.email}</td>
-                  <td>{item.phone}</td>
-                </tr>
-              );
-            })}
+          {data && data.map((item) => {
+            return <TableRow key={item.id} item={item} />;
+          })}
+        </tbody>
+      </table>
+      <table border="2" style={{ margin: "10px", marginTop: "20px", borderCollapse: "collapse" }}>
+        <thead>
+          <th>UserId</th>
+          <th>Post Title</th>
+          <th>Post Body</th>
+        </thead>
+        <tbody>
+          {posts && posts.map((item) => {
+            return <TableRow2 key={item.id} item={item} />;
+          })}
         </tbody>
       </table>
     </div>
