@@ -32,7 +32,7 @@ const routerVariables = createBrowserRouter([
       },
       {
         path: "*",
-        element: <div><h1>404 Page Not Found</h1></div>, 
+        element: <div><h1>404 Page Not Found. Please check your URL</h1></div>, 
       }
     ],
   },
