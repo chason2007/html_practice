@@ -15,9 +15,13 @@ function App() {
 
   useEffect(() => {
     if(val<0){
-      setTimeout(() => {
+      let timer = setTimeout(() => {
         setVal(0);
       }, 2000);
+      //cleanup function
+      return () => {
+        clearTimeout(timer);
+      }
     }
   }, [val]);
 
