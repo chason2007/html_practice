@@ -4,7 +4,7 @@ import Counter from "./Counter";
 
 function App() {
   const [val, setVal] = useState(0);
-
+  let [data, setData] = useState(null);
   const handleIncrement = () => {
     setVal(val + 1);
   };
@@ -25,7 +25,19 @@ function App() {
     }
   }, [val]);
 
-
+  //fetching api
+  useEffect(() => {
+    const fetchApi = async () => {
+      try{
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+        const fetchData = await response.json();
+        setData(fetchData);
+      } catch(err){
+        console.log("Error fetching data:", err);
+      }
+    };
+    fetchApi();
+  }, []);
 
   // // side effects
   // //Args: 1. Callback fn 2. Dependency array(props or state)
