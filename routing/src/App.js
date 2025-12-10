@@ -1,10 +1,10 @@
+import { Outlet } from 'react-router-dom';
 import './App.css';
-import Home from './Pages/Home';
 
 function App() {
   return (
     <div className="App">
-      RouterProvider
+      <Outlet></Outlet>
     </div>
   );
 }
