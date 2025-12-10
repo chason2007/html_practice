@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Home from './Pages/Home';
 import About from './Pages/About';
 import Cart from './Pages/Cart';
 import Search from './Pages/Search';
