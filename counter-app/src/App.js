@@ -10,34 +10,37 @@ function App() {
   };
 
   const handleDecrement = () => {
-    setVal(val-1);
+    setVal(Math.max(val - 1, 0));
   };
 
   useEffect(() => {
-    if(val<0){
+    if (val < 0) {
       let timer = setTimeout(() => {
         setVal(0);
       }, 2000);
       //cleanup function
       return () => {
         clearTimeout(timer);
-      }
+      };
     }
   }, [val]);
 
   //fetching api
   useEffect(() => {
     const fetchApi = async () => {
-      try{
-        const response = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+      try {
+        const response = await fetch(
+          "https://jsonplaceholder.typicode.com/users"
+        );
         const fetchData = await response.json();
         setData(fetchData);
-      } catch(err){
+      } catch (err) {
         console.log("Error fetching data:", err);
       }
     };
     fetchApi();
   }, []);
+  console.log(data);
 
   // // side effects
   // //Args: 1. Callback fn 2. Dependency array(props or state)
@@ -47,7 +50,7 @@ function App() {
   // useEffect(() => {
   //   console.log("UseEffect - run once after initial render");
   // }, []);
-  
+
   // useEffect(() => {
   //   console.log("UseEffect - with array of depensencies");
   // }, [val]);
@@ -57,11 +60,30 @@ function App() {
   // });
   return (
     <div className="App">
-      <Counter 
-        val={val} 
-        handleIncrement={handleIncrement} 
-        handleDecrement={handleDecrement} 
+      <Counter
+        val={val}
+        handleIncrement={handleIncrement}
+        handleDecrement={handleDecrement}
       />
+      <table border="2" style={{ margin: "auto", marginTop: "20px", borderCollapse: "collapse" }}>
+        <thead>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Contact</th>
+        </thead>
+        <tbody>
+          {data &&
+            data.map((item) => {
+              return (
+                <tr>
+                  <td>{item.name}</td>
+                  <td>{item.email}</td>
+                  <td>{item.phone}</td>
+                </tr>
+              );
+            })}
+        </tbody>
+      </table>
     </div>
   );
 }
