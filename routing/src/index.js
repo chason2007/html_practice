@@ -30,6 +30,10 @@ const routerVariables = createBrowserRouter([
         path: "/search",
         element: <Search></Search>,
       },
+      {
+        path: "*",
+        element: <div><h1>404 Page Not Found</h1></div>, 
+      }
     ],
   },
 ]);
