@@ -12,7 +12,7 @@ const Product = () => {
             .then(data => {
                 setUsers(data.students);
                 if (userId !== undefined) {
-                    setUser(data.students[parseInt(userId)]);
+                    setUser(data.students.find(u => u.id === parseInt(userId)));
                 }
             })
             .catch(error => console.error('Error fetching data:', error));

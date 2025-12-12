@@ -1,7 +1,9 @@
 const Error = () => {
     return (
         <div>
-            <h1>404-Page not found!</h1>
+            <h1 style={{fontSize: "48px",
+            color: "red"
+            }}>404-Page not found!</h1>
         </div>
     );
 }

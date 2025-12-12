@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from './Pages/Home';
 import Product from './Pages/Product';
 import Registration from './Pages/Registration';
+import Error from './Pages/Error';
 
 
 const Routes = createBrowserRouter([
@@ -32,7 +33,7 @@ const Routes = createBrowserRouter([
       },
       {
         path: "*",
-        element: <div>Page Not Found</div>,
+        element: <Error />,
       }
     ],
   },
