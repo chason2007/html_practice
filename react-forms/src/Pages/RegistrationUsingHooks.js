@@ -6,7 +6,14 @@ const RegistrationUsingHooks = ()=>{
     const { data, setData } = useOutletContext();
     console.log(data[0]);
 
-    const {register, handleSubmit, reset}
+    const { register, handleSubmit, reset } = useForm();
+    
+    const onSubmit = (frdata) => {
+        console.log(frdata);
+        frdata.id = data.length + 1;
+        setData([...data, frdata]);
+        reset();
+    };
 
     return(
         <div>

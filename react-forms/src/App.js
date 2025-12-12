@@ -7,7 +7,7 @@ function App() {
   
   return (
     <div className="App">
-      <header className="header">
+      <header style={{display: 'flex', gap: '1rem', padding: '1rem', backgroundColor: '#f0f0f0'}}>
         <NavLink to={"/"}>Home</NavLink>
         <NavLink to={"/registrationhooks"}>Registration Using Hooks</NavLink>
         <NavLink to={"/registration"}>Registration without Hooks</NavLink>
