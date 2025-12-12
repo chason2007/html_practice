@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+header h1 {
+    margin: 0;
+    color: black;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: blue;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.links a:hover,
+.links a.active {
+    background-color: #007bff;
+    color: white;
+}
