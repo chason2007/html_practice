@@ -1,14 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useOutletContext } from 'react-router-dom';
 
 const Home = () => {
-    const [students, setStudents] = useState([]);
-
-    useEffect(() => {
-        fetch('/Data.json')
-            .then(response => response.json())
-            .then(data => setStudents(data.students))
-            .catch(error => console.error('Error fetching data:', error));
-    }, []);
+    const { data } = useOutletContext();
 
     return (
         <div>
@@ -24,7 +17,7 @@ const Home = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {students.map((student) => (
+                    {data.map((student) => (
                         <tr key={student.id}>
                             <td>{student.id}</td>
                             <td>{student.name}</td>

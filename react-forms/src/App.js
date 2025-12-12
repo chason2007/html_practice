@@ -1,9 +1,16 @@
 import './App.css';
 import { NavLink, Outlet } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function App() {
   const [data, setData] = useState([]);
+  
+  useEffect(() => {
+    fetch('/Data.json')
+      .then(response => response.json())
+      .then(jsonData => setData(jsonData.students))
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
   
   return (
     <div className="App">
