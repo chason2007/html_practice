@@ -1,10 +1,12 @@
 import { useForm } from "react-hook-form";
+import { useOutletContext } from "react-router-dom";
 
 const RegistrationUsingHooks = ()=>{
-    const{register, handleSubmit} = useForm();
-    const onSubmit = (data) =>{
-        console.log(data)
-    };
+
+    const { data, setData } = useOutletContext();
+    console.log(data[0]);
+
+    const {register, handleSubmit, reset}
 
     return(
         <div>
@@ -23,7 +25,7 @@ const RegistrationUsingHooks = ()=>{
                 <input {...register("password")} type="password"></input><br/>
 
                 <label>College name: </label>
-                <input {...register("clgName")} type="text"></input><br/>
+                <input {...register("collegeName")} type="text"></input><br/>
                 
                 <button type="submit">Submit</button>
             </form>

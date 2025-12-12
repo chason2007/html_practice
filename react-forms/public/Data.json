@@ -1,0 +1,84 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Balasurya S",
+      "age": 18,
+      "email": "balasurya.s@gmail.com",
+      "password": "bala@1234",
+      "collegeName": "SECE"
+    },
+    {
+      "id": 2,
+      "name": "Aman Karn",
+      "age": 21,
+      "email": "aman.karm@gmail.com",
+      "password": "aman@2025",
+      "collegeName": "SECE"
+    },
+    {
+      "id": 3,
+      "name": "Baraneetharan R",
+      "age": 19,
+      "email": "baranee.rbt@gmail.com",
+      "password": "baranee@2006",
+      "collegeName": "IIT Bombay"
+    },
+    {
+      "id": 4,
+      "name": "Darshan S",
+      "age": 18,
+      "email": "darshan.s@gmail.com",
+      "password": "darsh@789",
+      "collegeName": "SKCET"
+    },
+    {
+      "id": 5,
+      "name": "Aman Mathur",
+      "age": 29,
+      "email": "aman.mathur@gmail.com",
+      "password": "AmanM#2002",
+      "collegeName": "KHNH University"
+    },
+    {
+      "id": 6,
+      "name": "Raj Sharma",
+      "age": 30,
+      "email": "sharma.raj@gmail.com",
+      "password": "lucky@123",
+      "collegeName": "Jammu University"
+    },
+    {
+      "id": 7,
+      "name": "Ashok Tamata",
+      "age": 20,
+      "email": "ashok.tamata@gmail.com",
+      "password": "ashok@2025",
+      "collegeName": "Nepal University"
+    },
+    {
+      "id": 8,
+      "name": "Akilesh Saravanan",
+      "age": 21,
+      "email": "akilesh.s@gmail.com",
+      "password": "akilesh.s",
+      "collegeName": "Anna University"
+    },
+    {
+      "id": 9,
+      "name": "Deepan G",
+      "age": 19,
+      "email": "g.deepan@gmail.com",
+      "password": "deepang@123",
+      "collegeName": "SECE"
+    },
+    {
+      "id": 10,
+      "name": "Vikram Rathore",
+      "age": 24,
+      "email": "vikram.rathore@gmail.com",
+      "password": "aishwarya@1990",
+      "collegeName": "Delhi University"
+    }
+  ]
+}

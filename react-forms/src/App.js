@@ -1,11 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-import { Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
+import { useState } from 'react';
 
 function App() {
+  const [data, setData] = useState([]);
+  
   return (
     <div className="App">
-      <Outlet></Outlet>
+      <header className="header">
+        <NavLink to={"/"}>Home</NavLink>
+        <NavLink to={"/registrationhooks"}>Registration Using Hooks</NavLink>
+        <NavLink to={"/registration"}>Registration without Hooks</NavLink>
+      </header>
+      <Outlet context={{
+        data,
+        setData,
+      }}></Outlet>
     </div>
   );
 }
