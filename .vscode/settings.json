@@ -1,0 +1,11 @@
+{
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.acceptSuggestionOnEnter": "on",
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true
+}
