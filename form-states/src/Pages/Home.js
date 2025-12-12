@@ -22,15 +22,17 @@ const Home = () => {
                         <th>Age</th>
                         <th>Email</th>
                         <th>College Name</th>
+                        <th>View</th>
                     </tr>
                 </thead>
                 <tbody>
                     {users.map((user) => (
                         <tr key={user.id}>
-                            <td><Link to={`/products/${user.id}`}>{user.name}</Link></td>
+                            <td>{user.name}</td>
                             <td>{user.age}</td>
                             <td>{user.email}</td>
                             <td>{user.collegeName}</td>
+                            <td><Link to={`/products/${user.id}`}><button className="viewButton">View Details</button></Link></td>
                         </tr>
                     ))}
                 </tbody>
