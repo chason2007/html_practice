@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import '../Styles/Product.css';
 
 const Product = () => {
     const { userId } = useParams();
@@ -20,10 +21,10 @@ const Product = () => {
 
     if (userId !== undefined) {
         return (
-            <div>
+            <div className="product-container">
                 <h1>User Details</h1>
                 {user ? (
-                    <div>
+                    <div className="user-details">
                         <p><strong>Name:</strong> {user.name}</p>
                         <p><strong>Age:</strong> {user.age}</p>
                         <p><strong>Email:</strong> {user.email}</p>
@@ -37,9 +38,9 @@ const Product = () => {
     }
 
     return (
-        <div>
+        <div className="product-container">
             <h1>All Users</h1>
-            <ul>
+            <ul className="users-list">
                 {users.map((user, index) => (
                     <li key={index}>{user.name}</li>
                 ))}
