@@ -3,13 +3,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #f8f9fa;
+    background-color: lightgray;
     border-bottom: 1px solid #dee2e6;
-}
-
-header h1 {
-    margin: 0;
-    color: black;
 }
 
 .links {
@@ -28,4 +23,9 @@ header h1 {
 .links a.active {
     background-color: #007bff;
     color: white;
+}
+
+img{
+    width: 50px;
+    height: 50px;
 }

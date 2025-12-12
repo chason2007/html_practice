@@ -4,8 +4,7 @@ import '../Styles/Header.css';
 const Header = () => {
     return (
         <header>
-            <h1>Form States Application</h1>
-            <img src="" alt="logo"></img>
+            <NavLink to={"/"}><img src=".\images\logo.png" alt="logo"></img></NavLink>
             <div className="links">
               <NavLink to={"/"}>Home</NavLink>
               <NavLink to={"/products"}>Products</NavLink>

@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [users, setUsers] = useState([]);
@@ -25,7 +26,7 @@ const Home = () => {
                 <tbody>
                     {users.map((user, index) => (
                         <tr key={index}>
-                            <td>{user.name}</td>
+                            <td><Link to={`/products/${index}`}>{user.name}</Link></td>
                             <td>{user.age}</td>
                             <td>{user.email}</td>
                             <td>{user.collegeName}</td>
